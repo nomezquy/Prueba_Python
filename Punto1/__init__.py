@@ -3,7 +3,7 @@ from manager import OrderManager
 from datetime import datetime
 import time
 
-OrderQuantity = 10
+OrderQuantity = 1000
 threadQuantity = 4
 
 
