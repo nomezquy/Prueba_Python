@@ -1,7 +1,9 @@
 from ast import arg
 from asyncio import threads
 from datetime import datetime, timedelta
+import random
 from threading import Thread
+import time
 import uuid
 
 class OrderManager:
@@ -54,6 +56,7 @@ class OrderManager:
             if removeOrder():
                 self.__orders_processed += 1            
                 self._log(message=f"Order { self.__orders_processed}  [{id}] was successfully prosecuted.")
+                time.sleep(random.uniform(0, 1))
             
            
     
